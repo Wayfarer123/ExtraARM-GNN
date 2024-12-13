@@ -1,0 +1,30 @@
+One of the key authors talk regarding the basics:
+    https://www.youtube.com/watch?v=1HhTpH3ZXMY
+
+Preliminaries:
+    https://arxiv.org/pdf/1905.13211 WHAT CAN NEURAL NETWORKS REASON ABOUT? (february 2020) - concept and formalization of algorithmic alignment, some intuition about architectures
+    https://arxiv.org/pdf/1910.10593 NEURAL EXECUTION OF GRAPH ALGORITHMS (January 2020) - first steps in training GNNs to mimic steps of classical algorithms
+    https://arxiv.org/pdf/2105.02761 Neural Algorithmic Reasoning (May 2021) - motivation and blueprint of NAR
+
+Basic benchmark:
+    https://arxiv.org/pdf/2205.15659 The CLRS Algorithmic Reasoning Benchmark (June 2022) - library with 30 popular classical algorithms to test processor network training approaches
+
+Some special cases and ideas for processor network training:
+    https://arxiv.org/pdf/2307.00337 Recursive Algorithmic Reasoning (November 2023) - augmenting reasoner with additional memory (stack) to mimic recursive algorithms
+    https://arxiv.org/pdf/2307.09660 Neural Priority Queues for Graph Neural Networks (July 2023) - augmenting reasoner with learnable priority queue
+    https://arxiv.org/pdf/2006.06380 Pointer Graph Networks (October 2020)
+
+More general things: 
+    https://arxiv.org/pdf/2209.11142 A Generalist Neural Algorithmic Learner (December 2022) - a single processor for 30 different algorithms beating previous SOTAs in most of them 
+    https://arxiv.org/pdf/2302.04496 DUAL ALGORITHMIC REASONING (February 2023) - learning similar (in this case dual tasks) results in better allignment and far better OOD generalisation (dozen nodes to hundred thousands)
+    https://arxiv.org/pdf/2302.10258 Neural Algorithmic Reasoning with Causal Regularisation (July 2023) - concept of regularization using the fact that different inputs with identical next steps in algorithm trajectories should predict similar "hints"
+    https://arxiv.org/pdf/2306.13411 Neural Algorithmic Reasoning Without Intermediate Supervision (November 2023) - remove teacher forced intemediate step prediction (hints), switch them to latent representations and force "algorithmically identical" inputs to follow same trajectories using contrastive loss 
+    https://arxiv.org/pdf/2306.15632 Asynchronous Algorithmic Alignment with Cocycles (January 2024) - how to mathematically avoid learning identity functions on most steps using category theory
+    https://arxiv.org/pdf/2307.08874 Latent Space Representations of Neural Algorithmic Reasoners (April 2024) - some visual insights and observations of simmetries (in the sense of group theory) of latent represantations of Bellman-Ford trajectories in processor networks 
+    https://arxiv.org/pdf/2202.05826 End-to-end Algorithm Synthesis with Recurrent Networks: Logical Extrapolation Without Overthinking (October 2022) - recall mechanism (basically skip connections) for much more effective end-to-end training 
+    
+NAR for Language Reasoning:
+    https://arxiv.org/pdf/2406.09308v1 Transformers meet Neural Algorithmic Reasoners (June 2024) - utilizing graph-represented algorithmic problem solver as well as a text-represented to generate in-text solution via cross-attention to the pretrained NAR-processor
+
+GNN reasoning for Combinatorial Optimization:
+    https://arxiv.org/pdf/2102.09544 Combinatorial Optimization and Reasoning with Graph Neural Networks (September 2022)

@@ -1,5 +1,6 @@
 ## Idea:
 Add an auto-regressively generated memory to NAR processor (fuse information from it via cross-attention) and use contrastive objective (just like in [THIS](https://arxiv.org/pdf/2302.10258) and [THIS](https://arxiv.org/pdf/2306.13411) papers). Suggested architecture sketch:
+
 ![extra-ARM-GNN](https://github.com/user-attachments/assets/0320d72f-5717-42d9-96ed-f441f93aa2f9)
 
 ## Motivation 

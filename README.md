@@ -7,5 +7,5 @@ Suggested architecture sketch:
 
 ## Motivation 
 * Much less constraint compared to usual hint-prediction mode
-* Force processor to extract similar features (<<ideas>>) for similar algorithms at each step, not trying to make trajectories identical. That might help to learn multiple algorithms at once.
-* <<Remembers>> first extracted (presumably simplest) features that might be helpful at later steps (eg. the shortest edge for each vertex for search algorithms).
+* Force processor to extract similar features ("ideas") for similar algorithms at each step, not trying to make trajectories identical. That might help to learn multiple algorithms at once.
+* "Remembers" first extracted (presumably simplest) features that might be helpful at later steps (eg. the shortest edge for each vertex for search algorithms).

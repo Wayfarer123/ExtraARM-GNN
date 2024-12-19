@@ -126,14 +126,17 @@
 
 
 \begin{frame}{Neural algorithmic reasoning, processor network \blfootnote{https://arxiv.org/pdf/2306.13411}}
-	
+	Suppose $g: \mathcal{X}\to \mathcal{Y}$ and $f_1\dots f_n$ generate $g$.\\
+	$\mathcal{N}$ is a network with modules $\mathcal{N}_i$ that $(M, \varepsilon, \delta)$-algorithmically aligns with g.\\
+	Then the common way to decrease $M$ is to train the model to explicitly predict $hint_i$ 
+	after each module $\mathcal{N}_i$, that are forced to be true $f_i(f_{i-1}(\dots))$
 	\begin{center}
-		\includegraphics[scale=0.3]{../pictures/processor with hints.png}
+		\includegraphics[scale=0.25]{../pictures/processor with hints.png}
 	\end{center}
 	\begin{itemize}
 		\item Trained to follow trajectory of classical algorithm 
 		\item Aligns poorly with multiple algorithms at once
-		\item Needs implicit hints on each step to enforce trajectory following
+		\item Needs explicit hints on each step to enforce trajectory following
 	\end{itemize}
 \end{frame}
 
